@@ -1,0 +1,107 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "CircularStd", sans-serif;
+  font-size: 0.9375rem;
+  color: #1f1f1f;
+  background-color: #f7f7f7;
+  min-height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  background-color: #fff;
+  border: 1px solid #ededed;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  overflow: hidden;
+  width: 500px;
+  max-width: 100%;
+}
+
+.wrapper {
+  padding: 30px;
+}
+
+.scan-image {
+  justify-content: space-around;
+  max-width: 166px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.scan-image button.btn {
+  display: none;
+}
+
+.scan-image button.btn img {
+  width: 30px;
+}
+
+.scan-btn {
+  justify-content: space-between;
+  background-color: #828282;
+  max-width: 133px;
+  margin: auto;
+  display: none;
+}
+
+.scan-btn button {
+  color: #fff;
+  font-size: 12px;
+}
+
+.btn {
+  border-radius: 5px;
+}
+
+#step1,
+#step2,
+#step3 {
+  display: none;
+}
+
+#player {
+  height: 200px;
+  display: none;
+}
+
+#canvas-temp {
+  display: none;
+  /* width: 200px; */
+  height: 200px;
+  /* border: 1px solid red; */
+}
+
+#canvas {
+  /* width: 200px; */
+  height: 200px;
+}
+
+#photo {
+  height: 50px;
+}
+
+@media only screen and (max-width: 575.98px) {
+  .body {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .wrapper {
+    padding: 15px;
+  }
+}

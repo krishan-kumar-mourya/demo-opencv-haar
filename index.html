@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <meta name="description" content="Face and eyes detection using OpenCV HAAR Cascade Classifier">
+  <meta name="keywords" content="Face detection, eyes detection, OpenCV, HAAR, Cascade Classifier">
+  <meta name="author" content="Krishan Kumar Mourya">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Demo - OpenCV HAAR</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Fontawesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+			<script src="js/html5shiv.min.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="box">
+      <div class="wrapper">
+        <div id="step-loader">
+          <img src="img/loader.png" class="d-block m-auto w-50" alt="" />
+        </div>
+
+        <div id="step1">
+          <img id="dummy-cam" src="img/scan.jpg" class="m-auto" alt="" />
+          <video id="player" class='m-auto' autoplay muted></video>
+          <div id="player-btns" class="flex-wrap scan-btn mt-5">
+            <button class='btn btn-transparent' id="flash"><i class='fa fa-flash'></i></button>
+            <button class='btn btn-transparent' id="capture"><i class='fa fa-camera'></i></button>
+            <button class='btn btn-transparent' id="camera"><i class='fa fa-undo'></i></button>
+          </div>
+        </div>
+
+        <div id="step2">
+          <canvas id="canvas-temp" class='m-auto'></canvas>
+          <canvas id="canvas" class='d-block m-auto'></canvas>
+          <div class="scan-image">
+            <button class="btn" id="accept"><img src='img/right.png' /></button>
+            <button class="btn" id="reject"><img src='img/wrong.png' /></button>
+          </div>
+        </div>
+
+        <div id="step3">
+          <img src="" class='d-block m-auto' alt="" id="photo">
+        </div>
+
+        <div id="errorMessage" class="d-block m-auto text-center"></div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="js/utils.js" type="text/javascript"></script>
+  <script src="js/facedetection.js" type="text/javascript"></script>
+
+</body>
+
+</html>
